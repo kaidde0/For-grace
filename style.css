@@ -8,19 +8,21 @@
 }
 
 body {
-  background: linear-gradient(black, #38873b);
+  background: black; /* hanya hitam di atas */
   font-family: "Acme", sans-serif;
 }
 
+/* Bagian atas dengan gambar dan teks */
 .paralax {
   position: relative;
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   padding: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background: linear-gradient(black, #38873b);
 }
 
 .paralax::before {
@@ -71,15 +73,24 @@ body {
   border-radius: 20px;
   text-decoration: none;
   z-index: 1000;
+  cursor: pointer;
 }
 
 .description {
   position: relative;
-  padding: 10em;
+  height: 100vh;
   background-color: #c4c2c3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.description p{
-  font-size 1.1em;
-
+.description .content {
+  text-align: center;
+  color: black;
+  font-size: 1.2em;
 }
+
+.description p {
+  font-size: 1.1em;
+  }
